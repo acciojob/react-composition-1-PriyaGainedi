@@ -12,6 +12,7 @@ const Tabs = ({tabs}) => {
                     <li onClick={()=>{setCurrentTab(tab)}}>{tab.title}</li>
                 ))
             }
+            
             {currentTab && <p>{currentTab.content}</p>}
         </div>
     )
